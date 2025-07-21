@@ -18,8 +18,9 @@ layer support, and export options.
 
 ## Screenshots
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/mrjP4FL9/Screenshot-1753102532.png" alt="Screenshot-1753102532" border="0" /></a>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/Hkjy26k/Screenshot-1753102536.png" alt="Screenshot-1753102536" border="0" /></a>
+<a href="https://ibb.co/F4vgdrjf"><img src="https://i.ibb.co/pjDJk79s/Screenshot-1753127318.png" alt="Screenshot-1753127318" border="0"></a>
+<a href="https://ibb.co/KcRr2KSZ"><img src="https://i.ibb.co/8nT7rYt3/Screenshot-1753127350.png" alt="Screenshot-1753127350" border="0"></a>
+<a href="https://ibb.co/LdjT173k"><img src="https://i.ibb.co/m5Zn4W3D/Screenshot-1753127354.png" alt="Screenshot-1753127354" border="0"></a>
 
 ## Getting Started
 
