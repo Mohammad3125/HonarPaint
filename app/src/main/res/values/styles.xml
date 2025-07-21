@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="brushesCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners</item>
+    </style>
+
+    <style name="layersCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners2</item>
+    </style>
+
+    <style name="fullscreenDialog" parent="Theme.HonarPaint">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="dialogFragmentAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="circleColorShapeAppearance" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="circleColorStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="shapeAppearanceOverlay">@style/circleColorShapeAppearance</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="strokeColor">?colorPrimary</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="brushSettingCategoryCardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_custom_corners3</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+    </style>
+
+    <style name="topRoundedCorners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">32dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance_custom_corners3" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+    </style>
+
+    <style name="brushesSlider" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="thumbRadius">8dp</item>
+        <item name="tickVisible">false</item>
+    </style>
+
+    <style name="roundCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.Theme.PhotoEditorTest.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+<!--    Splash-->
+   <!-- <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        &lt;!&ndash; Set the splash screen background, animated icon, and animation duration. &ndash;&gt;
+        <item name="windowSplashScreenBackground">@color/black</item>
+
+        &lt;!&ndash; Use windowSplashScreenAnimatedIcon to add a drawable or an animated drawable. One of these is required. &ndash;&gt;
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_baboomeh_splash</item>
+
+        &lt;!&ndash; Set the theme of the Activity that directly follows your splash screen. This is required. &ndash;&gt;
+        <item name="postSplashScreenTheme">@style/Theme.PhotoEditorTest</item>
+    </style>-->
+
+</resources>
