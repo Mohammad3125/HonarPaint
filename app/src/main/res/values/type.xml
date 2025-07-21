@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.HonarPaint.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">104sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">65sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">52sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/fredoka</item>
+        <item name="android:fontFamily">@font/fredoka</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:fontFamily">@font/lato</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+
+    <style name="TextAppearance.HonarPaint.Headline1.FA" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">104sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline2.FA" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">65sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline3.FA" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">52sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline4.FA" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">37sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline5.FA" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Headline6.FA" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/lalezaar</item>
+        <item name="android:fontFamily">@font/lalezaar</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Subtitle1.FA" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Subtitle2.FA" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Body1.FA" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Body2.FA" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Button.FA" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Caption.FA" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+    <style name="TextAppearance.HonarPaint.Overline.FA" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/vazirmatn</item>
+        <item name="android:fontFamily">@font/vazirmatn</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+</resources>

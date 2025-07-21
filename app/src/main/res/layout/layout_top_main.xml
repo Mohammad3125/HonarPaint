@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutTopMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonCancelOperationTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:minWidth="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_close" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discard"
+            android:textAppearance="?textAppearanceOverline" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonGetBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:animateLayoutChanges="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonGetBack"
+        app:layout_constraintRight_toLeftOf="@id/buttonProjectSetting">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonPaintUndo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:alpha="0.5"
+            android:layout_marginEnd="8dp"
+            app:srcCompat="@drawable/ic_undo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonPaintRedo"
+            android:layout_width="32dp"
+            android:alpha="0.5"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/ic_redo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonPaintLayers"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_stack" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonResetMatrix"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            app:srcCompat="@drawable/ic_reset_rotate" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonOperationDoneTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:minWidth="48dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_check" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewConfirmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textAppearance="?textAppearanceOverline" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonProjectSetting"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintRight_toLeftOf="@id/buttonSaveFinalImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_gear" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonSaveFinalImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

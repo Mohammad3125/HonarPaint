@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewRootParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:layoutDirection="ltr"
+    app:layout_optimizationLevel="standard|dimensions|grouping|cache_measures"
+    tools:context=".presentation.main.view.FragmentPaint">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutTopRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/layoutMainTopBinding"
+            layout="@layout/layout_top_main" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <ir.simurgh.photolib.components.paint.view.LayeredPainterView
+        android:id="@+id/paintView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gray"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontalScrollRoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutTopRoot" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/rootLayoutTools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomRootLayer"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <include
+                android:id="@+id/layoutPaintToolBinding"
+                layout="@layout/layout_paint_tool" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </HorizontalScrollView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMaxBrushSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewLayers"
+        style="@style/layersCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorSurfaceAlpha"
+        android:visibility="gone"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline5"
+        app:layout_constraintTop_toBottomOf="@id/guideline2">
+
+        <include
+            android:id="@+id/layoutPainterLayersBinding"
+            layout="@layout/painter_view_layers_layout" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMainExtraOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSurfaceAlpha"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toTopOf="@id/horizontalScrollRoot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/colorHolderBinding"
+            layout="@layout/color_layout"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/brushesLayoutBinding"
+            layout="@layout/brushes_layout"
+            android:visibility="gone" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutBrushSettingsExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/colorSurfaceAlpha"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@id/layoutMainExtraOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/topRoundedCorners">
+
+        <include
+            android:id="@+id/layoutInSettings"
+            layout="@layout/layout_brush_properties" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- <androidx.appcompat.widget.LinearLayoutCompat
+         android:id="@+id/layoutTopExtraOptions"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="@color/colorSurfaceAlpha"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/layoutTopRoot">
+
+         <include
+             android:id="@+id/selectionExtraBinding"
+             layout="@layout/selection_extra_options_layout"
+             android:visibility="gone" />
+
+     </androidx.appcompat.widget.LinearLayoutCompat>
+ -->
+
+    <FrameLayout
+        android:id="@+id/frameLayoutProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorSurfaceAlpha"
+        android:visibility="gone">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circularProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            app:minHideDelay="1500" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

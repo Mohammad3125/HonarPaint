@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewBrushPreview"
+    android:layout_width="@dimen/brush_preview_size"
+    android:layout_height="@dimen/brush_preview_size"
+    android:layout_marginEnd="8dp"
+    app:strokeColor="?colorPrimary">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewBrushPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="?colorOnSurface" />
+
+    <View
+        android:id="@+id/viewSurfaceColorBehindSlidersHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSurfaceAlpha"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewBrushPreviewSettingIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_sliders_horizontal" />
+
+
+</com.google.android.material.card.MaterialCardView>

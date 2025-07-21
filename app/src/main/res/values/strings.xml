@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">HonarPaint</string>
+    <string name="rotate_button">Rotate Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="file_provider_manifest_name" translatable="false">ir.baboomeh.editor.fileprovider</string>
+    <string name="slideropengl" translatable="false">sliderOpenGl</string>
+    <string name="line_spacing">LINE</string>
+    <string name="character_spacing">CHARACTER</string>
+    <string name="transformable_text_spacing">Spacing</string>
+    <string name="selection_tool_text">SELECT</string>
+    <string name="crop_tool_text">Crop</string>
+    <string name="shapes_text">Shape</string>
+    <string name="image_tool_text">Image</string>
+    <string name="text_tool_text">Text</string>
+    <string name="paint_tool_text">Paint</string>
+    <string name="text_tool_underline_text">Underline</string>
+    <string name="text_bold">BOLD</string>
+    <string name="text_normal_font">NORMAL</string>
+    <string name="text_strikethrough_text">Strike</string>
+    <string name="text_alignment_text">ALIGNMENT</string>
+    <string name="text_blending_normal" translatable="false">NORMAL</string>
+    <string name="text_blending_overlay" translatable="false">OVERLAY</string>
+    <string name="text_blending_screen" translatable="false">SCREEN</string>
+    <string name="text_blending_multiply" translatable="false">MULTIPLY</string>
+    <string name="text_blending_darken" translatable="false">DARKEN</string>
+    <string name="text_blending_lighten" translatable="false">LIGHTEN</string>
+    <string name="text_blending_add" translatable="false">ADD</string>
+    <string name="text_duplicate_transformable_button">Duplicate</string>
+    <string name="text_transformable_perspective_button">Perspective</string>
+    <string name="default_textprivew_textview_text" translatable="false">ابجدهوز AaBbCc</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+    <string name="text_font_pick_page">FONTS</string>
+    <string name="text_asset_selection_texture">TEXTURES</string>
+    <string name="text_add_texture">ADD TEXTURE</string>
+    <string name="text_asset_selection_fonts">FONTS</string>
+    <string name="text_add_font">ADD FONT</string>
+    <string name="text_background_tab_settings">SETTINGS</string>
+    <string name="app_fonts">App Fonts</string>
+    <string name="my_fonts">My Fonts</string>
+    <string name="my_fonts_cap">MY FONTS</string>
+    <string name="discover">Discover</string>
+    <string name="app_textures">App Textures</string>
+    <string name="my_textures">MY TEXTURES</string>
+    <string name="filter">FILTER</string>
+    <string name="sticker">Sticker</string>
+    <string name="effect">Effect</string>
+    <string name="delete">delete</string>
+    <string name="close">Close</string>
+    <string name="width">Width</string>
+    <string name="opacity">Opacity</string>
+    <string name="image">Image</string>
+    <string name="empty_canvas">Empty Canvas</string>
+    <string name="blending_mode">BLENDING MODE</string>
+    <string name="opacitycap">OPACITY</string>
+    <string name="done">DONE</string>
+    <string name="corner">Corner</string>
+    <string name="mode">MODE</string>
+    <string name="lasso">LASSO</string>
+    <string name="crop">Crop</string>
+    <string name="format">Format</string>
+    <string name="color">Color</string>
+    <string name="background">Background</string>
+    <string name="rect">Rect</string>
+    <string name="brush">Brush</string>
+    <string name="pen">Pen</string>
+    <string name="brushes">Brushes</string>
+    <string name="brushesSelected">Brushes◥</string>
+    <string name="blend">Blend</string>
+    <string name="save">Save</string>
+    <string name="path">Path</string>
+    <string name="arrange">Arrange</string>
+    <string name="flip_rotate">Flip/Rotate</string>
+    <string name="align">Align</string>
+    <string name="shadow">Shadow</string>
+    <string name="stroke">Stroke</string>
+    <string name="font">FONT</string>
+    <string name="reset_canvas">Reset Canvas</string>
+    <string name="confirm">Confirm</string>
+    <string name="position">Position</string>
+    <string name="size">Size</string>
+    <string name="radius">Radius</string>
+    <string name="x" translatable="false">X</string>
+    <string name="y" translatable="false">Y</string>
+    <string name="guidelines">Guidelines</string>
+    <string name="rotation_guideline">Rotation Guideline</string>
+    <string name="bounds_guideline">Bounds Guideline</string>
+    <string name="gesture">Gestures</string>
+    <string name="rotation">Rotation</string>
+    <string name="zoom">Zoom</string>
+    <string name="guidelineSnap">Guideline Snap</string>
+    <string name="sensitivity">Sensitivity</string>
+    <string name="move">Move</string>
+    <string name="settings">SETTINGS</string>
+    <string name="start_editing">Start Editing</string>
+    <string name="merge">merge</string>
+    <string name="angle">Angle</string>
+    <string name="hardness">Hardness</string>
+    <string name="squish">Squish</string>
+    <string name="spacing">Spacing</string>
+    <string name="scatter">Scatter</string>
+    <string name="angle_jitter">Angle Jitter</string>
+    <string name="hue_jitter">Hue Jitter</string>
+    <string name="hue_flow">Hue Flow</string>
+    <string name="hue_distance">Hue Distance</string>
+    <string name="taper_size">Taper Size</string>
+    <string name="taper_speed">Taper Speed</string>
+    <string name="size_variance">Size Variance</string>
+    <string name="size_variance_sensitivity">Size Variance Sensitivity</string>
+    <string name="size_variance_easing">Size Variance Easing</string>
+    <string name="opacity_variance">Opacity Variance</string>
+    <string name="opacity_variance_sensitivity">Opacity Variance Sensitivity</string>
+    <string name="opacity_variance_easing">Opacity Variance Easing</string>
+    <string name="size_pressure_sensitive">Pressure Sensitive Size</string>
+    <string name="minimum_pressure_size">Minimum Pressure Size</string>
+    <string name="min_size">Min Size</string>
+    <string name="max_size">Max Size</string>
+    <string name="opacity_pressure_sensitive">Pressure Sensitive Opacity</string>
+    <string name="min_opacity">Min Opacity</string>
+    <string name="max_opacity">Max Opacity</string>
+    <string name="smoothness">Smoothness</string>
+    <string name="blend_alpha">Blend Alpha</string>
+    <string name="auto_rotate">Auto Rotate</string>
+    <string name="size_jitter">Size Jitter</string>
+    <string name="softness">Softness</string>
+    <string name="normal">NORMAL</string>
+    <string name="adjust">Adjust</string>
+    <string name="hue">Hue</string>
+    <string name="saturation">Saturation</string>
+    <string name="contrast">Contrast</string>
+    <string name="brightness">Brightness</string>
+    <string name="tint">Tint</string>
+    <string name="temperature">Temperature</string>
+    <string name="padding">PADDING</string>
+    <string name="discard">Discard</string>
+    <string name="recent">Recent</string>
+    <string name="backgrounds">Backgrounds</string>
+    <string name="custom">Custom</string>
+    <string name="speed_sensitive">Speed Sensitive</string>
+    <string name="layers">Layers:</string>
+    <string name="undo_count">Undo count:</string>
+    <string name="pick">Pick</string>
+    <string name="pixel_per_inch">Pixel per inch</string>
+    <string name="attributes">ATTRIBUTES</string>
+    <string name="horizontal">HORIZONTAL</string>
+    <string name="vertical">VERTICAL</string>
+    <string name="custom_page_setting">CUSTOM</string>
+    <string name="new_project">New</string>
+    <string name="open">Open</string>
+    <string name="export">Export</string>
+    <string name="save_as">Save As</string>
+    <string name="auto_save">Auto Save</string>
+    <string name="you_can_move_zoom_rotate_the_texture_or_gradient">You can move,zoom,rotate the texture or gradient</string>
+    <string name="ok">OK</string>
+    <string name="applyTexture">Apply Texture</string>
+    <string name="applyGradient">Apply Gradient</string>
+    <string name="clear">Clear</string>
+    <string name="invert">Invert</string>
+    <string name="clip">Clip</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="eraser">Eraser</string>
+    <string name="eraser_selection">Eraser</string>
+    <string name="eraserSelected">Eraser◥</string>
+    <string name="fill">Fill</string>
+    <string name="blur">Blur</string>
+    <string name="emptyMask">You should select an area first</string>
+    <string name="preset8k" translatable="false">8K</string>
+    <string name="presetHd" translatable="false">HD</string>
+    <string name="ppi" translatable="false">PPI</string>
+    <string name="preset4k" translatable="false">4K</string>
+    <string name="presetFullHd" translatable="false">Full Hd</string>
+    <string name="presetPhone" translatable="false">Phone</string>
+    <string name="presetLetter" translatable="false">Letter</string>
+    <string name="presetA3" translatable="false">A3</string>
+    <string name="presetA5" translatable="false">A5</string>
+    <string name="presetA4" translatable="false">A4</string>
+    <string name="presets">PRESETS</string>
+    <string name="aspect3_4">3–4</string>
+    <string name="aspect1_1">1–1</string>
+    <string name="aspect9_21">9–21</string>
+    <string name="aspect10_16">10–16</string>
+    <string name="aspect9_16">9–16</string>
+    <string name="aspect4_3">4–3</string>
+    <string name="aspect21_9">21–9</string>
+    <string name="aspect16_10">16–10</string>
+    <string name="aspect16_9">16–9</string>
+    <string name="height">Height</string>
+    <string name="made_with">Made with ❤️ by Mohammad Hossein Naderi</string>
+    <string name="baboomeh_version" translatable="false">v1.0.0beta</string>
+    <string name="texturesCredit">Textures are from www.sharetextures.com</string>
+    <string name="brushesCredit">Brushes are from www.myphotoshopbrushes.com</string>
+    <string name="fontsCredit">Fonts are from fonts.google.com and www.fontiran.com</string>
+    <string name="lineSmoothingCredit">Part of the line smoothing algorithm is inspired by github.com/krzysztofzablocki</string>
+    <string name="credits">CREDITS</string>
+    <string name="telegramAddress" translatable="false">https://telegram.me/Mohammad3125</string>
+    <string name="linkdinAddress" translatable="false">https://www.linkedin.com/in/mohammad-hossein-naderi</string>
+    <string name="githubAddress" translatable="false">https://github.com/Mohammad3125</string>
+    <string name="app_label">Baboomeh</string>
+    <string name="free">Free</string>
+    <string name="original">Original</string>
+    <string name="quality">QUALITY</string>
+    <string name="px">PX</string>
+    <string name="solid">SOLID</string>
+    <string name="gradient">GRADIENT</string>
+    <string name="texture">TEXTURE</string>
+    <string name="linear">Linear</string>
+    <string name="radial">Radial</string>
+    <string name="sweep">Sweep</string>
+    <string name="behind">behind</string>
+    <string name="front">front</string>
+    <string name="back">back</string>
+    <string name="forward">forward</string>
+    <string name="italic">ITALIC</string>
+    <string name="closing_the_project">Closing The Project</string>
+    <string name="do_you_want_to_save_the_project">Do you want to save the project?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_want_to_apply_the_current_effect">Do you want to apply the current effect?</string>
+    <string name="apply_the_effect">Apply the effect?</string>
+    <string name="apply">Apply</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="persian">Persian</string>
+    <string name="layer_is_locked">Layer is locked</string>
+    <string name="nearest">Nearest</string>
+    <string name="insert_the_width">Insert the width</string>
+    <string name="insert_the_height">Insert the height</string>
+    <string name="isLanguageSettingShown" translatable="false">isLanguageSettingShown</string>
+    <string name="png" translatable="false">PNG</string>
+    <string name="jpg" translatable="false">JPG</string>
+    <string name="webp_lossless" translatable="false">WEBP LOSSLESS</string>
+    <string name="webp_lossy" translatable="false">WEBP LOSSY</string>
+    <string name="webp" translatable="false">WEBP</string>
+    <string name="layers_limit_reached">Layers limit reached</string>
+    <string name="selection_is_empty">Selection is empty</string>
+    <string name="easterEggKey" translatable="false">isEasterEgg</string>
+    <string name="select_only_mpf_files">Select only .mpf files</string>
+    <string name="size_should_not_be_larger_than_5000">size should not be larger than 5000</string>
+    <string name="size_should_not_be_0">size should not be 0</string>
+    <string name="can_t_delete_first_layer">Can\'t delete first layer</string>
+    <string name="export_file_name" translatable="false">untitled</string>
+    <string name="page_dimensions">Page Dimensions</string>
+    <string name="start_painting">Start Painting</string>
+    <string name="are_you_sure_you_want_to_close_the_project">Are you sure you want to close the project?</string>
+</resources>

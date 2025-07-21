@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutBrushLayer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layerBrushSettingNormalHeight"
+    android:layoutDirection="ltr"
+    android:layout_marginHorizontal="16dp"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/buttonExpandBrushSettings"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_layer_up" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewBrushPreviewHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp">
+
+        <ir.simurgh.photolib.components.paint.painters.painting.BrushPreview
+            android:id="@+id/brushPreview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingHorizontal="16dp"
+             />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/scrollViewBrushOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutBrushSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/size"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="1"
+                android:valueFrom="1"
+                android:valueTo="200"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/opacity"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderOpacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textViewHardness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/softness"
+                android:textAppearance="?textAppearanceSubtitle1"
+                android:visibility="gone" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderHardness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:visibility="gone"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/angle"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderAngle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.1"
+                android:valueFrom="0"
+                android:valueTo="360"
+                app:tickVisible="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/squish"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderSquish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:value="0"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/spacing"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:value="0.03"
+                android:valueFrom="0.01"
+                android:valueTo="2"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/scatter"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderScatter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0"
+                android:valueTo="2"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/size_jitter"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderSizeJitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/angle_jitter"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderAngleJitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/hue_jitter"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderHueJitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="360"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/hue_flow"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderHueFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="100"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/hue_distance"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderHueDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="360"
+                app:tickVisible="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/taper_size"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderBrushTaperStartSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:value="0"
+                android:valueFrom="0"
+                android:valueTo="4f"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/taper_speed"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderBrushTaperSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.001"
+                android:value="0"
+                android:valueFrom="0"
+                android:valueTo="0.2"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxPressureSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_pressure_sensitive"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/min_size"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderMinimumPressureSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:enabled="false"
+                android:stepSize="0.01"
+                android:value="0.3"
+                android:valueFrom="0"
+                android:valueTo="2"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/max_size"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderMaximumPressureSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:enabled="false"
+                android:stepSize="0.01"
+                android:value="1"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxPressureOpacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/opacity_pressure_sensitive"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/min_opacity"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderMinimumPressureOpacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:enabled="false"
+                android:stepSize="0.01"
+                android:value="0.3"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/max_opacity"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderMaximumPressureOpacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:enabled="false"
+                android:stepSize="0.01"
+                android:value="1"
+                android:valueFrom="0"
+                android:valueTo="1"
+                app:tickVisible="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/smoothness"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderBrushSmoothness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:stepSize="0.01"
+                android:valueFrom="0.0"
+                android:valueTo="0.99"
+                app:tickVisible="false" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBoxAlphaBlend"
+                    android:layout_width="0dp"
+                    android:textDirection="ltr"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/blend_alpha"
+                    android:textAppearance="?textAppearanceSubtitle1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkBoxAutoRotate"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textDirection="ltr"
+                    android:layout_height="wrap_content"
+                    android:text="@string/auto_rotate"
+                    android:textAppearance="?textAppearanceSubtitle1" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkBoxSpeedSensitive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speed_sensitive"
+                android:textDirection="ltr"
+                android:textAppearance="?textAppearanceSubtitle1" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

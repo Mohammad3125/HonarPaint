@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPaintTools"
+    android:animateLayoutChanges="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="RtlHardcoded"
+    android:layout_gravity="left"
+    android:layoutDirection="ltr"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonBrushSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_end_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_brush" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewBrushToolInPaintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brushesSelected"
+            android:textAppearance="?textAppearanceOverline" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonLassoColoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_end_margin"
+        android:alpha="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_lasso" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lasso"
+            android:textAppearance="?textAppearanceOverline" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonBrushEraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_end_margin"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_eraser" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewEraserPaintTool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eraser"
+            android:textAppearance="?textAppearanceOverline" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonColorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_end_margin"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_palette" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color"
+            android:textAppearance="?textAppearanceOverline" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonFillColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_end_margin"
+        android:gravity="center"
+        android:alpha="0.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/items_size"
+            android:layout_height="@dimen/items_size"
+            app:srcCompat="@drawable/ic_bucket" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fill"
+            android:textAppearance="?textAppearanceOverline" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

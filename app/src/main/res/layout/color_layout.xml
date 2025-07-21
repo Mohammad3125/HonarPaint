@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollViewSolidColors"
+    android:layout_width="wrap_content"
+    android:layout_margin="8dp"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutSolidColorOptionsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonSolidDropper"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/colorPickingItemSize"
+            android:layout_height="@dimen/colorPickingItemSize"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_dropper" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonSolidColorPicker"
+            android:layout_width="@dimen/colorPickingItemSize"
+            android:layout_height="@dimen/colorPickingItemSize"
+            android:layout_marginEnd="24dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_palette" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/colorCirclesHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/white"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/black"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/gray"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/light_gray"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/dark_gray"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/red_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/orange_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/yellow_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/green_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/blue_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/purple_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_200"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_300"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_400"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_500"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_600"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_700"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_800"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="@dimen/colorPickingItemSize"
+                android:backgroundTint="@color/pink_900"
+                style="@style/circleColorStyle"
+                android:layout_marginEnd="@dimen/fab_end_margin"
+                android:layout_height="@dimen/colorPickingItemSize" />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</HorizontalScrollView>
+
+
+    

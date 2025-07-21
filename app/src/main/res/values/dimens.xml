@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_end_margin">12dp</dimen>
+    <dimen name="color_circles_size">28dp</dimen>
+    <dimen name="items_size">24dp</dimen>
+    <dimen name="colorPickingItemSize">32dp</dimen>
+    <dimen name="small_items_size">18dp</dimen>
+    <dimen name="main_tools_size">70dp</dimen>
+    <dimen name="crop_factor_dimention">24dp</dimen>
+    <dimen name="brush_preview_size">48dp</dimen>
+    <dimen name="layerBrushSettingNormalHeight">160dp</dimen>
+    <dimen name="layerBrushSettingExpanded">412dp</dimen>
+    <dimen name="cardviewBackgroundsWidth">96dp</dimen>
+    <dimen name="marginBottomRootLayer">0dp</dimen>
+    <dimen name="fragmentStartMarginViews">16dp</dimen>
+</resources>
